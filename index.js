@@ -15,9 +15,10 @@ The function should:
   Example createMenuItem('tacos', 8, 'Lunch') should return {name: 'tacos', price: 8, category: 'Lunch'}
 */
 
-function createMenuItem(/*Your code here*/){
-    /*Your code here*/
+function createMenuItem(name, price, category){
+    return {name, price, category};
 }
+console.log(createMenuItem("tacos", 8, "Lunch"))
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 1b: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Invoke your function!
@@ -48,8 +49,15 @@ export const burger = {
   name: "Burger", 
   price: 18, 
   category: "Lunch", 
-  /*Your code here*/
+  discount: function (title){
+    if (title == ("teacher" || "student")){
+      return (burger.price * .75);
+    } else if (title = "public"){
+      return (burger.price * .9);
+    }
+  }
 }
+console.log(burger.discount("teacher"))
 
 
 
@@ -69,6 +77,7 @@ const reviews = [
 Using the reviews array above:
   1. log only Julius' feedback to the console - no function needed 
 */
+// console.log(reviews."Julius".feedback);
 
 
 
